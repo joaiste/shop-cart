@@ -1,0 +1,109 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(245, 217, 188);
+}
+
+header {
+  background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1453&q=80");
+  background-repeat: repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 140px;
+  margin-bottom: 90px;
+}
+
+/* TOP NAVIGATION */
+
+nav.top {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  left: 0;
+  z-index: 2; /*deleting it doesn't change anything visually, why?*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 3.5em;
+  color: rgb(252, 236, 229);
+  font-weight: bold;
+}
+
+nav.top li {
+  list-style: none;
+  display: inline-block; /* repositions items to be in a row */
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 23px;
+}
+
+nav.top li span {
+  padding-left: 4px;
+}
+
+li a {
+  padding: 10px;
+  font-size: 1.15em;
+  font-weight: bolder;
+  color: rgb(97, 50, 42);
+  background-color: rgb(252, 236, 228);
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 1em;
+  color: rgb(153, 136, 112);
+  vertical-align: bottom;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
+/* BODY-PRODUCTS*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  color: rgb(97, 50, 42);
+}
+
+.prod-image {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(177, 158, 137);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(97, 50, 42);
+  font-weight: bolder;
+}
